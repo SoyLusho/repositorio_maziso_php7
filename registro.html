@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <title>Registro Docente</title>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Masizo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item dropdown dropleft">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Opciones
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="registro.html">Formulario de registro</a>
+                        <a class="dropdown-item" href="index.html">Consultar notas</a>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <div class="container">
+         <h3 class="display-4 text-center mt-4 mb-4" style="font-size:35px;">Registro de notas estudiante</h3>
+         <hr align="center" size="20" width="100%" style="color: #000000;"/>
+         <h4 class="lead mb-3">Datos personales:</h4>
+         <form action="proceso_registro_estudiante.php" method="POST">
+            <div class="form-group">
+               <label for="">Nombres del estudiante</label>
+               <input type="text" class="form-control" name="nombre estudiante" id="nombre" placeholder="Digite los nombres del estudiante">
+            </div>
+            <div class="form-group">
+               <label for="">Apellidos del estudiante</label>
+               <input type="text" class="form-control" name="apellido estudiante" id="apellidos" placeholder="Digite los apellidos del estudiante">
+            </div>
+            <div class="form-group">
+               <label for="exampleInputEmail1">Documento de identidad</label>
+               <input type="text" class="form-control"  name="documento estudiante" id="documento" aria-describedby="emailHelp" placeholder="Digite el número de documento">
+            </div>
+            <hr class="mt-4" align="center" size="20" width="100%" style="color: #000000;"/>
+            <h4 class="lead mb-3">Calificación:</h4>
+            <div class="form-group">
+               <label for="">Respiración</label>
+               <input type="text" class="form-control" name="cabeza" id="cabeza" placeholder="Digite la nota de el ítem 'Respiración'">
+            </div>
+            <div class="form-group">
+               <label for="">Propulsión piernas</label>
+               <input type="text" class="form-control" name="pierna" id="pierna" placeholder="Digite la nota de el ítem 'Propulsión pierna'">
+            </div>
+            <div class="form-group">
+               <label for="">Brazada</label>
+               <input type="text" class="form-control" name="brazo" id="brazo" placeholder="Digite la nota de el ítem 'Brazada'">
+            </div>
+            <button id="guardar" type="button" class="btn btn-outline-dark btn-block">Guardar registro</button>
+         </form>
+      </div>
+
+      <br>
+      <br>
+      
+
+  
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.min.js"></script>      
+      <script type="text/javascript" src="js_funciones/registrar_estudiante.js"></script>
+   </body>
+</html>
+
