@@ -34,7 +34,7 @@ function listar_estudiantes(){
         
     $promedio = ($row[2]+$row[3]+$row[4])/3;    
 
-    $tabla .= formateador($row[5],$row[0]." ".$row[1],number_format($promedio, 1, '.', ''));     
+    $tabla .= formateador($row[5],$row[0]." ".$row[1]);     
      
     }     
     
@@ -52,13 +52,13 @@ function listar_estudiantes(){
 echo listar_estudiantes();
 
 
-function formateador($cedula,$nombre_estudiante,$promedio){
+function formateador($cedula,$nombre_estudiante){
   
  $fragmento2 = '[ "'; 
  $fragmento3 = '", "';
  $fragmento4 = '" ],';
  
- $tabla = "$fragmento2$cedula$fragmento3$nombre_estudiante$fragmento3$promedio$fragmento4";   
+ $tabla = "$fragmento2$cedula$fragmento3$nombre_estudiante$fragmento4";   
 
  return $tabla;     
       

@@ -106,9 +106,7 @@ $(document).ready(function() {
         'brazo': brazo
         }
         }).done(function (respuesta) {     
- 
-        alert(respuesta)    
-
+         
         swal('¡Bien hecho!','Se ha registrado exitosamente','success')
 
         $("#documento").val("");

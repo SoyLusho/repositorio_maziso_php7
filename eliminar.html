@@ -10,6 +10,7 @@
       <!--Custom styles-->
       <link rel="stylesheet" href="css/custom.css">
       <title>Estilo de natación</title>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
    </head>
    <body>
       <header>
@@ -41,7 +42,7 @@
          <div class="row ">
             <div class="col-12 ">
                <h3 class="mt-5 mb-3 left display-4" style="font-size:23px;">Da clic para eliminar todos los registros:
-                    <span><button type="button" class="btn btn-outline-dark">Eliminar todos</button></span>
+                    <span><button id="boton_eliminar" type="button" class="btn btn-outline-dark">Eliminar todos</button></span>
                </h3>
             </div>
 
@@ -49,7 +50,7 @@
 
             <!--TABLA NOTAS-->
             <div class="col-12 table-responsive">
-               <table id="" class="table table-dark display">
+               <table id="tabla" class="table table-dark display">
                   <thead>
                      <tr>
                         <th scope="col" class="text-center">Cédula</th>
@@ -58,14 +59,7 @@
                      </tr>
                   </thead>
                   <tbody>
-                      <tr>
-                          <td>1070619260</td>
-                          <td>Luis Ramirez Lievano</td>
-                          <td>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
-                          </td>
-                      </tr>
-                     
+                                           
                   </tbody>
                </table>
             </div>
@@ -89,7 +83,7 @@
       <script src="datatables.net-bs/js/dataTables.bootstrap4.min.js"></script>
       
 
-      <script src="js_funciones/index.js"></script>
+      <script src="js_funciones/eliminar_estudiante.js"></script>
 
       <script>
          $(document).ready(function() {
